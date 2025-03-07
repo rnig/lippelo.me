@@ -1,0 +1,32 @@
+@base <https://lippelo.me/#erwin.geeraerts/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix person: <http://xmlns.com/foaf/0.1/Person>.
+
+<http://example.org/orgs/AuxiliaVZW> a foaf:Organization ;
+  foaf:name "Auxilia VZW" .
+
+
+<#erwin.geeraerts>  a foaf:Person ;
+       foaf:name "Erwin Geeraerts"^^xsd:string ;
+       foaf:based_near "Lippelo" ; 
+       foaf:givenName "Erwin";
+       foaf:familyName "Geeraerts";
+       foaf:age "49"^^xsd:integer;
+       foaf:Organization "Auxilia VZW";
+       foaf:mbox "erwin@lippelo.me";
+       foaf:homepage "https://www.linkedin.com/in/geeraertserwin/";
+       foaf:children (	
+              [ foaf:name "Uma" ]
+	      [ foaf:name "Cyriel" ]
+	      [ foaf:name "Ella" ]
+       );
+       
+       foaf:knows [
+       		  foaf:name "Lynn Van Kerckhove"
+		  ];
+		  
+       foaf:knows [
+       		  foaf:name "Guy Cools"
+		  ].
+		  

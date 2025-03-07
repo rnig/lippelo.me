@@ -1,0 +1,46 @@
+{
+  "@context": {
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "xsd": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  },
+  "@id": "https://example.og/#me/",
+  "@type": "foaf:Person",
+  "foaf:name": {
+    "@value": "Erwin Geeraerts",
+    "@type": "xsd:string"
+  },
+  "foaf:based_near": {
+    "@id": "http://example.org/locations/Lippelo"
+  },
+  "foaf:givenName": "Erwin",
+  "foaf:familyName": "Geeraerts",
+  "foaf:age": {
+    "@value": 49,
+    "@type": "xsd:integer"
+  },
+  "foaf:organization": {
+    "@type": "foaf:Organization",
+    "foaf:name": "Auxilia VZW"
+  },
+  "foaf:mbox": "erwin@lippelo.me",
+  "foaf:homepage": "https://www.linkedin.com/in/geeraertserwin/",
+  "foaf:children": [
+    {
+      "foaf:name": "Uma"
+    },
+    {
+      "foaf:name": "Cyriel"
+    },
+    {
+      "foaf:name": "Ella"
+    }
+  ],
+  "foaf:knows": [
+    {
+      "foaf:name": "Lynn Van Kerckhove"
+    },
+    {
+      "foaf:name": "Guy Cools"
+    }
+  ]
+}
