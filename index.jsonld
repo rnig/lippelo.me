@@ -1,19 +1,19 @@
 [
   {
-    "@id": "http://example.org/orgs/AuxiliaVZW",
+    "@id": "https://lynnvkerckhove.github.io/graphPub/#me",
     "@type": [
-      "http://xmlns.com/foaf/0.1/Organization"
-    ],
-    "http://xmlns.com/foaf/0.1/name": [
-      {
-        "@value": "Auxilia VZW"
-      }
+      "http://xmlns.com/foaf/0.1/Person"
     ]
   },
   {
     "@id": "https://lippelo.me/erwin.geeraerts",
     "@type": [
       "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://schema.org/educationalOccupationalCredential": [
+      {
+        "@id": "_:n010699d79cb04c3f8be0258108eb882cb11"
+      }
     ],
     "http://schema.org/knowsLanguage": [
       {
@@ -31,7 +31,7 @@
     ],
     "http://schema.org/location": [
       {
-        "@id": "_:na0152a4cc3ad4cb4b73a17c791df57fab9"
+        "@id": "_:n010699d79cb04c3f8be0258108eb882cb9"
       }
     ],
     "http://xmlns.com/foaf/0.1/Organization": [
@@ -60,13 +60,13 @@
       {
         "@list": [
           {
-            "@id": "_:na0152a4cc3ad4cb4b73a17c791df57fab1"
+            "@id": "_:n010699d79cb04c3f8be0258108eb882cb1"
           },
           {
-            "@id": "_:na0152a4cc3ad4cb4b73a17c791df57fab2"
+            "@id": "_:n010699d79cb04c3f8be0258108eb882cb2"
           },
           {
-            "@id": "_:na0152a4cc3ad4cb4b73a17c791df57fab3"
+            "@id": "_:n010699d79cb04c3f8be0258108eb882cb3"
           }
         ]
       }
@@ -88,10 +88,10 @@
     ],
     "http://xmlns.com/foaf/0.1/knows": [
       {
-        "@id": "_:na0152a4cc3ad4cb4b73a17c791df57fab7"
+        "@id": "_:n010699d79cb04c3f8be0258108eb882cb7"
       },
       {
-        "@id": "_:na0152a4cc3ad4cb4b73a17c791df57fab8"
+        "@id": "_:n010699d79cb04c3f8be0258108eb882cb8"
       }
     ],
     "http://xmlns.com/foaf/0.1/mbox": [
@@ -112,7 +112,7 @@
     ]
   },
   {
-    "@id": "_:na0152a4cc3ad4cb4b73a17c791df57fab1",
+    "@id": "_:n010699d79cb04c3f8be0258108eb882cb1",
     "http://dbpedia.org/ontology/gender": [
       {
         "@value": "female"
@@ -130,7 +130,7 @@
     ]
   },
   {
-    "@id": "_:na0152a4cc3ad4cb4b73a17c791df57fab2",
+    "@id": "_:n010699d79cb04c3f8be0258108eb882cb2",
     "http://dbpedia.org/ontology/gender": [
       {
         "@value": "male"
@@ -148,7 +148,7 @@
     ]
   },
   {
-    "@id": "_:na0152a4cc3ad4cb4b73a17c791df57fab3",
+    "@id": "_:n010699d79cb04c3f8be0258108eb882cb3",
     "http://dbpedia.org/ontology/gender": [
       {
         "@value": "female"
@@ -166,7 +166,7 @@
     ]
   },
   {
-    "@id": "_:na0152a4cc3ad4cb4b73a17c791df57fab7",
+    "@id": "_:n010699d79cb04c3f8be0258108eb882cb7",
     "http://xmlns.com/foaf/0.1/homepage": [
       {
         "@id": "https://lynnvkerckhove.github.io/graphPub/#me"
@@ -179,7 +179,7 @@
     ]
   },
   {
-    "@id": "_:na0152a4cc3ad4cb4b73a17c791df57fab8",
+    "@id": "_:n010699d79cb04c3f8be0258108eb882cb8",
     "http://xmlns.com/foaf/0.1/homepage": [
       {
         "@id": "https://gc-cc.github.io/#me"
@@ -192,13 +192,13 @@
     ]
   },
   {
-    "@id": "_:na0152a4cc3ad4cb4b73a17c791df57fab9",
+    "@id": "_:n010699d79cb04c3f8be0258108eb882cb9",
     "@type": [
       "http://schema.org/Place"
     ],
     "http://schema.org/address": [
       {
-        "@id": "_:na0152a4cc3ad4cb4b73a17c791df57fab10"
+        "@id": "_:n010699d79cb04c3f8be0258108eb882cb10"
       }
     ],
     "http://schema.org/name": [
@@ -208,7 +208,7 @@
     ]
   },
   {
-    "@id": "_:na0152a4cc3ad4cb4b73a17c791df57fab10",
+    "@id": "_:n010699d79cb04c3f8be0258108eb882cb10",
     "http://schema.org/addressCountry": [
       {
         "@value": "Belgium"
@@ -221,15 +221,36 @@
     ]
   },
   {
+    "@id": "_:n010699d79cb04c3f8be0258108eb882cb11",
+    "@type": [
+      "http://schema.org/Course"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Knowledge Graphs Course"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@id": "https://pietercolpaert.be/teaching/kg/#2024-2025"
+      }
+    ]
+  },
+  {
     "@id": "https://gc-cc.github.io/#me",
     "@type": [
       "http://xmlns.com/foaf/0.1/Person"
     ]
   },
   {
-    "@id": "https://lynnvkerckhove.github.io/graphPub/#me",
+    "@id": "http://example.org/orgs/AuxiliaVZW",
     "@type": [
-      "http://xmlns.com/foaf/0.1/Person"
+      "http://xmlns.com/foaf/0.1/Organization"
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Auxilia VZW"
+      }
     ]
   }
 ]
