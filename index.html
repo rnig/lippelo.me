@@ -19,6 +19,7 @@
   <head>
     
     <!-- Document Information  -->
+    <title>Erwin Geeraerts</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all">
@@ -27,8 +28,6 @@
     <link rel="alternate" type="text/turtle" href="index.ttl">    
     <link rel="alternate" type="application/ld+json" href="index.jsonld">
 
-    <!-- Page Information  -->
-    <title>Erwin Geeraerts</title>
     <meta about="https://lippelo.me" property="schema:creator foaf:maker schema:mainEntity foaf:primaryTopic"
 	  resource="https://lippelo.me/#erwin.geeraerts">
     <meta about="https://lippelo.me/#erwin.geeraerts" typeof="schema:WebSite foaf:PersonalProfileDocument">
@@ -42,77 +41,92 @@
     <!-- Personal Information -->
     <meta property="con:preferredURI" resource="https://lippelo.me/#erwin.geeraerts">
     <meta property="schema:url foaf:homepage" resource="https://www.linkedin.com/in/geeraertserwin/">
-    <meta property="foaf:based_near dbo:location" resource="https://dbpedia.org/page/Lippelo">    
-    <meta property="foaf:based_near dbo:location" resource="https://dbpedia.org/page/Brussels">
-    <meta property="foaf:workplaceHomepage" resource="https://www.patronale-life.be/">
+    <meta property="foaf:name" content="Erwin Geeraerts">
+    <meta property="foaf:givenName" content="Erwin">
+    <meta property="foaf:familyName" content="Geeraerts">
+    <meta property="foaf:age" content="49" datatype="xsd:integer">
+    <link rel="foaf:homepage" href="https://www.linkedin.com/in/geeraertserwin/">
+    <link rel="foaf:workplaceHomepage" href="https://www.patronale-life.be/">
+    <meta property="foaf:based_near" content="Lippelo">
+    <link rel="foaf:based_near" href="https://dbpedia.org/page/Lippelo">
+    <link rel="foaf:based_near" href="https://dbpedia.org/page/Brussels">
     <meta property="schema:knowsLanguage" content="nl">
     <meta property="schema:knowsLanguage" content="nl-BE">
     <meta property="schema:knowsLanguage" content="en">
     <meta property="schema:knowsLanguage" content="fr">
 
+    <!-- Children Information -->
+    <meta property="foaf:children" typeof="schema:Person">
+    <meta property="foaf:name" content="Uma">
+    <meta property="schema:birthDate" content="2006-09-27">
+    <meta property="dbo:gender" content="female">
+    <meta property="foaf:children" typeof="schema:Person">
+    <meta property="foaf:name" content="Cyriel">
+    <meta property="schema:birthDate" content="2008-07-03">
+    <meta property="dbo:gender" content="male">
+    <meta property="foaf:children" typeof="schema:Person">
+    <meta property="foaf:name" content="Ella">
+    <meta property="schema:birthDate" content="2010-03-20">
+    <meta property="dbo:gender" content="female">
+
+    <!-- Knows Information -->
+    <meta property="foaf:knows" typeof="foaf:Person">
+    <meta property="foaf:name" content="Lynn Van Kerckhove">
+    <link rel="foaf:homepage" href="https://lynnvkerckhove.github.io/graphPub/#me">
+    <meta property="foaf:knows" typeof="foaf:Person">
+    <meta property="foaf:name" content="Guy Cools">
+    <link rel="foaf:homepage" href="https://gc-cc.github.io/#me">
+
+    <!-- Organization Information -->
+    <meta property="foaf:Organization" typeof="foaf:Organization">
+    <meta property="foaf:name" content="Auxilia VZW">
+
+    <!-- Workplace Location -->
+    <meta property="schema:location" typeof="schema:Place">
+    <meta property="schema:name" content="Patronale Life Office">
+    <meta property="schema:address" typeof="schema:PostalAddress">
+    <meta property="schema:addressLocality" content="Brussels">
+    <meta property="schema:addressCountry" content="Belgium">
+
+    <!-- Educational Information -->
+    <meta property="schema:educationalOccupationalCredential" typeof="schema:Course">
+    <meta property="schema:name" content="Knowledge Graphs Course">
+    <link rel="schema:url" href="https://pietercolpaert.be/teaching/kg/#2024-2025">    
   
-	<script type="application/ld+json" id="erwin.geeraerts">
-	  {
-	      "@context": {
-		  "foaf": "http://xmlns.com/foaf/0.1/",
-		  "xsd": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	      },
-	      "@id": "https://lippelo.me/#erwin.geeraerts",
-	      "@type": "foaf:Person",
-	      "foaf:name": {
-		  "@value": "Erwin Geeraerts",
-		  "@type": "xsd:string"
-	      },
-	      "foaf:based_near": {
-		  "@id": "http://example.org/locations/Lippelo"
-	      },
-	      "foaf:givenName": "Erwin",
-	      "foaf:familyName": "Geeraerts",
-	      "foaf:age": {
-		  "@value": 49,
-		  "@type": "xsd:integer"
-	      },
-	      "foaf:organization": {
-		  "@type": "foaf:Organization",
-		  "foaf:name": "Auxilia VZW"
-	      },
-	      "foaf:mbox": "erwin@lippelo.me",
-	      "foaf:homepage": "https://www.linkedin.com/in/geeraertserwin/",
-	      "foaf:children": [
-		  {
-		      "foaf:name": "Uma"
-		  },
-		  {
-		      "foaf:name": "Cyriel"
-		  },
-		  {
-		      "foaf:name": "Ella"
-		  }
-	      ],
-	      "foaf:knows": [
-		  {
-		      "foaf:name": "Lynn Van Kerckhove"
-		  },
-		  {
-		      "foaf:name": "Guy Cools"
-		  }
-
-		  Voor de urls:
-
-https://lynnvkerckhove.github.io/graphPub/#me of https://lynnvkerckhove.github.io/graphPub/docs/LynnVK.ttl (zou dat eigenlijk ook niet mogen?)
-
-en van Guy: https://gc-cc.github.io/#me (die staat in de discussions wel blijkbaar 😃 )
-
- 
-	      ]
-	  }
-	</script>
-	</head>
-	
-	<body>
-	
-	<h1>Hello</h1>
-	
-	</body>
-	
+  </head>
+  
+  <body>
+    
+    <h1>Welkom op mijn persoonlijke pagina.</h1>
+    <h2>Mijn naam:</h2>
+    <ul>
+      <li>Voornaam:Erwin
+      <li>Achternaam:Geeraerts
+    </ul>
+    <h2>Mijn home pagina's:</h2>
+    <ul>
+      <li>Deze pagina.
+      <li><a href="https://www.linkedin.com/in/geeraertserwin/">LinkedIn</a>
+    </ul>
+    <h2>Welkom op mijn persoonlijke pagina.</h2>
+    <ul>
+      <li>Deze pagina.
+      <li>LinkedIn:
+    </ul>
+    <h2>Vertrouwde plekken:</h2>
+    <ul>
+      <li>Thuis:Lippelo
+      <li>Werk:Brussel
+    </ul>
+    <h2>Talenkennis:</h2>
+    <ul>
+      <li>Nederlands (moedertaal),
+      <li>Frans (tweede taal & professioneel goed onderhouden),
+      <li>Engels (professioneel goed onderhouden),
+      <li>Beetje Duits (voor op vakantie),
+      <li>Ooit Latijn... (toen ik nog op de schoolbanken zat)
+      <li>Italiaans (wil ik zeker ooit eens goed leren spreken).
+    </ul>
+  </body>
+  
 </html>
