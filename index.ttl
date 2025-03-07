@@ -1,13 +1,16 @@
-@base <https://lippelo.me/#erwin.geeraerts/> .
+@base <https://lippelo.me/#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix con: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
 @prefix person: <http://xmlns.com/foaf/0.1/Person>.
+@prefix schema: <http://schema.org/> .
 
 <http://example.org/orgs/AuxiliaVZW> a foaf:Organization ;
   foaf:name "Auxilia VZW" .
 
 
-<#erwin.geeraerts>  a foaf:Person ;
+<erwin.geeraerts>  a foaf:Person ;
        foaf:name "Erwin Geeraerts"^^xsd:string ;
        foaf:based_near "Lippelo" ; 
        foaf:givenName "Erwin";
@@ -16,17 +19,57 @@
        foaf:Organization "Auxilia VZW";
        foaf:mbox "erwin@lippelo.me";
        foaf:homepage "https://www.linkedin.com/in/geeraertserwin/";
-       foaf:children (	
-              [ foaf:name "Uma" ]
-	      [ foaf:name "Cyriel" ]
-	      [ foaf:name "Ella" ]
+
+       foaf:children (
+        [
+            foaf:name "Uma" ;
+            schema:birthDate "2006-09-27" ;
+            dbo:gender "female"
+        ]
+        [
+            foaf:name "Cyriel" ;
+            schema:birthDate "2008-07-03" ;
+            dbo:gender "male"
+        ]
+        [
+            foaf:name "Ella" ;
+            schema:birthDate "2010-03-20" ;
+            dbo:gender "female"
+        ]
        );
        
        foaf:knows [
-       		  foaf:name "Lynn Van Kerckhove"
-		  ];
+       		  foaf:name "Lynn Van Kerckhove" ;
+		  foaf:homepage <https://lynnvkerckhove.github.io/graphPub/#me>
+		  ] ;
 		  
        foaf:knows [
-       		  foaf:name "Guy Cools"
-		  ].
-		  
+       		  foaf:name "Guy Cools" ;
+		  foaf:homepage <https://gc-cc.github.io/#me>
+ 		  ] ;
+
+       foaf:based_near <https://dbpedia.org/page/Lippelo> ;
+       
+       foaf:workplaceHomepage <https://www.patronale-life.be/> ;
+       foaf:based_near <https://dbpedia.org/page/Brussels> ;
+       schema:location [
+        a schema:Place ;
+        schema:name "Patronale Life Office" ;
+        schema:address [
+            schema:addressLocality "Brussels" ;
+            schema:addressCountry "Belgium"
+        ]
+       ];   
+       
+       schema:knowsLanguage "nl" ;
+       schema:knowsLanguage "nl-BE" ;
+       schema:knowsLanguage "en" ;
+       schema:knowsLanguage "fr".
+
+
+<https://lynnvkerckhove.github.io/graphPub/#me>
+    a foaf:Person .
+
+<https://gc-cc.github.io/#me>
+    a foaf:Person .
+
