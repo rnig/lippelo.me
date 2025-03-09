@@ -1,0 +1,256 @@
+[
+  {
+    "@id": "https://lynnvkerckhove.github.io/graphPub/#me",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Person"
+    ]
+  },
+  {
+    "@id": "https://lippelo.me/erwin.geeraerts",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://schema.org/educationalOccupationalCredential": [
+      {
+        "@id": "_:n010699d79cb04c3f8be0258108eb882cb11"
+      }
+    ],
+    "http://schema.org/knowsLanguage": [
+      {
+        "@value": "nl"
+      },
+      {
+        "@value": "nl-BE"
+      },
+      {
+        "@value": "en"
+      },
+      {
+        "@value": "fr"
+      }
+    ],
+    "http://schema.org/location": [
+      {
+        "@id": "_:n010699d79cb04c3f8be0258108eb882cb9"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/Organization": [
+      {
+        "@value": "Auxilia VZW"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/age": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 49
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/based_near": [
+      {
+        "@value": "Lippelo"
+      },
+      {
+        "@id": "https://dbpedia.org/page/Lippelo"
+      },
+      {
+        "@id": "https://dbpedia.org/page/Brussels"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/children": [
+      {
+        "@list": [
+          {
+            "@id": "_:n010699d79cb04c3f8be0258108eb882cb1"
+          },
+          {
+            "@id": "_:n010699d79cb04c3f8be0258108eb882cb2"
+          },
+          {
+            "@id": "_:n010699d79cb04c3f8be0258108eb882cb3"
+          }
+        ]
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/familyName": [
+      {
+        "@value": "Geeraerts"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/givenName": [
+      {
+        "@value": "Erwin"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage": [
+      {
+        "@value": "https://www.linkedin.com/in/geeraertserwin/"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/knows": [
+      {
+        "@id": "_:n010699d79cb04c3f8be0258108eb882cb7"
+      },
+      {
+        "@id": "_:n010699d79cb04c3f8be0258108eb882cb8"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/mbox": [
+      {
+        "@value": "erwin@lippelo.me"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#string",
+        "@value": "Erwin Geeraerts"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/workplaceHomepage": [
+      {
+        "@id": "https://www.patronale-life.be/"
+      }
+    ]
+  },
+  {
+    "@id": "_:n010699d79cb04c3f8be0258108eb882cb1",
+    "http://dbpedia.org/ontology/gender": [
+      {
+        "@value": "female"
+      }
+    ],
+    "http://schema.org/birthDate": [
+      {
+        "@value": "2006-09-27"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Uma"
+      }
+    ]
+  },
+  {
+    "@id": "_:n010699d79cb04c3f8be0258108eb882cb2",
+    "http://dbpedia.org/ontology/gender": [
+      {
+        "@value": "male"
+      }
+    ],
+    "http://schema.org/birthDate": [
+      {
+        "@value": "2008-07-03"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Cyriel"
+      }
+    ]
+  },
+  {
+    "@id": "_:n010699d79cb04c3f8be0258108eb882cb3",
+    "http://dbpedia.org/ontology/gender": [
+      {
+        "@value": "female"
+      }
+    ],
+    "http://schema.org/birthDate": [
+      {
+        "@value": "2010-03-20"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Ella"
+      }
+    ]
+  },
+  {
+    "@id": "_:n010699d79cb04c3f8be0258108eb882cb7",
+    "http://xmlns.com/foaf/0.1/homepage": [
+      {
+        "@id": "https://lynnvkerckhove.github.io/graphPub/#me"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Lynn Van Kerckhove"
+      }
+    ]
+  },
+  {
+    "@id": "_:n010699d79cb04c3f8be0258108eb882cb8",
+    "http://xmlns.com/foaf/0.1/homepage": [
+      {
+        "@id": "https://gc-cc.github.io/#me"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Guy Cools"
+      }
+    ]
+  },
+  {
+    "@id": "_:n010699d79cb04c3f8be0258108eb882cb9",
+    "@type": [
+      "http://schema.org/Place"
+    ],
+    "http://schema.org/address": [
+      {
+        "@id": "_:n010699d79cb04c3f8be0258108eb882cb10"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Patronale Life Office"
+      }
+    ]
+  },
+  {
+    "@id": "_:n010699d79cb04c3f8be0258108eb882cb10",
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "Belgium"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Brussels"
+      }
+    ]
+  },
+  {
+    "@id": "_:n010699d79cb04c3f8be0258108eb882cb11",
+    "@type": [
+      "http://schema.org/Course"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Knowledge Graphs Course"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@id": "https://pietercolpaert.be/teaching/kg/#2024-2025"
+      }
+    ]
+  },
+  {
+    "@id": "https://gc-cc.github.io/#me",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Person"
+    ]
+  },
+  {
+    "@id": "http://example.org/orgs/AuxiliaVZW",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Organization"
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Auxilia VZW"
+      }
+    ]
+  }
+]
