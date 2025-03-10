@@ -10,7 +10,7 @@
   foaf:name "Auxilia VZW" .
 
 
-<erwin.geeraerts>  a foaf:Person ;
+<#me>  a foaf:Person ;
        foaf:name "Erwin Geeraerts"^^xsd:string ;
        foaf:based_near "Lippelo" ; 
        foaf:givenName "Erwin";
