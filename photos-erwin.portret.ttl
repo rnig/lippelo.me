@@ -1,0 +1,37 @@
+# Een portretfoto
+photo:foto1 a photo:PortraitPhoto ;
+    photo:title "Portret Erwin"@nl ;
+    photo:description "Een portret van Erwin op kantoor."@nl ;
+    photo:dateCreated "2024-10-15T15:54:00"^^xsd:dateTime ;
+    photo:hasPhotographer photo:fotograaf1 ;
+    photo:depictsPerson photo:persoon1 ;
+    photo:takenAt photo:kantoor1 ;
+    photo:hasTag photo:tag_portret, photo:tag_professional .
+
+# De fotograaf
+photo:fotograaf1 a photo:Photographer ;
+    photo:firstName "Erwin" ;
+    photo:lastName "Geeraerts" ;
+    photo:name "Erwin Geeraerts" ;
+    photo:hasMadePhoto photo:foto1 .
+
+# De afgebeelde persoon
+photo:persoon1 a photo:Subject ;
+    photo:firstName "Jan" ;
+    photo:lastName "Bakker" ;
+    photo:name "Jan Bakker" ;
+    photo:isDepictedIn photo:foto1 .
+
+# De locatie
+photo:kantoor1 a photo:Location ;
+    photo:name "kantoor Patronale Life" ;
+    geo:lat 50.8524 ;
+    geo:long 4.3679
+    photo:hasPhotoTaken photo:foto1 .
+
+# De tags
+photo:tag_portret a photo:Tag ;
+    photo:name "portret" .
+
+photo:tag_professional a photo:Tag ;
+    photo:name "professioneel" .

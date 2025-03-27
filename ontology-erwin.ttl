@@ -1,0 +1,226 @@
+# Prefix declaraties
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> . 
+@prefix dc: <http://purl.org/dc/elements/1.1/> . # Dublin core elements
+@prefix dcterms: <http://purl.org/dc/terms/> . # Dublin Core terms
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix exif: <http://www.w3.org/2003/12/exif/ns#> .
+@prefix iptc: <http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/> .
+
+# Onze foto ontologie namespace
+@prefix photo: <http://lippelo.me/photo-ontology#> .
+
+# Beschrijving van de ontologie zelf
+<http://lippelo.me/photo-ontology> a owl:Ontology ;
+    rdfs:label "Foto Ontologie"@nl ;
+    rdfs:label "Photo Ontology"@en ;
+    rdfs:comment "Een ontologie voor het beschrijven van foto's, fotografen, afgebeelde personen, locaties en foto-eigenschappen."@nl ;
+    dcterms:creator "Ontologie Ontwerper" ;
+    dcterms:created "2025-03-23"^^xsd:date ;
+    dcterms:modified "2025-03-23"^^xsd:date ;
+    owl:versionInfo "1.0" .
+
+# Hoofdklassen van de ontologie
+
+# Foto klasse
+photo:Photo a owl:Class ;
+    rdfs:label "Foto"@nl ;
+    rdfs:label "Photo"@en ;
+    rdfs:comment "Een fotografische afbeelding."@nl ;
+    rdfs:subClassOf foaf:Image .
+
+# Persoon klasse
+photo:Person a owl:Class ;
+    rdfs:label "Persoon"@nl ;
+    rdfs:label "Person"@en ;
+    rdfs:comment "Een persoon gerelateerd aan een foto, zoals een fotograaf of een afgebeeld persoon."@nl ;
+    rdfs:subClassOf foaf:Person .
+
+# Fotograaf subklasse
+photo:Photographer a owl:Class ;
+    rdfs:label "Fotograaf"@nl ;
+    rdfs:label "Photographer"@en ;
+    rdfs:comment "Een persoon die fotografeert."@nl ;
+    rdfs:subClassOf photo:Person .
+
+# Subject subklasse (persoon in een foto)
+photo:Subject a owl:Class ;
+    rdfs:label "Onderwerp"@nl ;
+    rdfs:label "Subject"@en ;
+    rdfs:comment "Een persoon die in een foto is afgebeeld."@nl ;
+    rdfs:subClassOf photo:Person .
+
+# Locatie klasse
+photo:Location a owl:Class ;
+    rdfs:label "Locatie"@nl ;
+    rdfs:label "Location"@en ;
+    rdfs:comment "Een plaats waar een foto is genomen of die op een foto is afgebeeld."@nl .
+
+# Specifieke locatie subklassen
+photo:City a owl:Class ;
+    rdfs:label "Stad"@nl ;
+    rdfs:label "City"@en ;
+    rdfs:subClassOf photo:Location .
+
+photo:Landmark a owl:Class ;
+    rdfs:label "Bezienswaardigheid"@nl ;
+    rdfs:label "Landmark"@en ;
+    rdfs:subClassOf photo:Location .
+
+# Specifieke fototypes
+photo:PortraitPhoto a owl:Class ;
+    rdfs:label "Portretfoto"@nl ;
+    rdfs:label "Portrait Photo"@en ;
+    rdfs:subClassOf photo:Photo .
+
+photo:LandscapePhoto a owl:Class ;
+    rdfs:label "Landschapsfoto"@nl ;
+    rdfs:label "Landscape Photo"@en ;
+    rdfs:subClassOf photo:Photo .
+
+# Tag/label klasse
+photo:Tag a owl:Class ;
+    rdfs:label "Tag"@nl ;
+    rdfs:label "Tag"@en ;
+    rdfs:comment "Een label of trefwoord dat aan een foto is toegewezen."@nl .
+
+
+# Eigenschappen (properties) van de ontologie
+
+# Object Properties (relaties tussen resources)
+
+photo:hasPhotographer a owl:ObjectProperty ;
+    rdfs:label "heeft fotograaf"@nl ;
+    rdfs:label "has photographer"@en ;
+    rdfs:domain photo:Photo ;
+    rdfs:range photo:Photographer ;
+    rdfs:comment "Relatie tussen een foto en de fotograaf die deze heeft gemaakt."@nl .
+
+photo:depictsPerson a owl:ObjectProperty ;
+    rdfs:label "beeldt persoon af"@nl ;
+    rdfs:label "depicts person"@en ;
+    rdfs:domain photo:Photo ;
+    rdfs:range photo:Person ;
+    rdfs:comment "Relatie tussen een foto en een persoon die op de foto staat."@nl .
+
+photo:isDepictedIn a owl:ObjectProperty ;
+    rdfs:label "is afgebeeld in"@nl ;
+    rdfs:label "is depicted in"@en ;
+    owl:inverseOf photo:depictsPerson .
+
+photo:takenAt a owl:ObjectProperty ;
+    rdfs:label "genomen op locatie"@nl ;
+    rdfs:label "taken at location"@en ;
+    rdfs:domain photo:Photo ;
+    rdfs:range photo:Location ;
+    rdfs:comment "Relatie tussen een foto en de locatie waar deze is genomen."@nl .
+
+photo:depictsLocation a owl:ObjectProperty ;
+    rdfs:label "beeldt locatie af"@nl ;
+    rdfs:label "depicts location"@en ;
+    rdfs:domain photo:Photo ;
+    rdfs:range photo:Location ;
+    rdfs:comment "Relatie tussen een foto en een locatie die op de foto staat."@nl .
+
+photo:hasTag a owl:ObjectProperty ;
+    rdfs:label "heeft tag"@nl ;
+    rdfs:label "has tag"@en ;
+    rdfs:domain photo:Photo ;
+    rdfs:range photo:Tag ;
+    rdfs:comment "Relatie tussen een foto en een tag of label."@nl .
+
+# Datatype Properties (relaties naar literals)
+
+photo:title a owl:DatatypeProperty ;
+    rdfs:label "titel"@nl ;
+    rdfs:label "title"@en ;
+    rdfs:domain photo:Photo ;
+    rdfs:range xsd:string ;
+    rdfs:comment "De titel van een foto."@nl .
+
+photo:description a owl:DatatypeProperty ;
+    rdfs:label "beschrijving"@nl ;
+    rdfs:label "description"@en ;
+    rdfs:domain photo:Photo ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Een tekstuele beschrijving van een foto."@nl .
+
+photo:dateCreated a owl:DatatypeProperty ;
+    rdfs:label "aanmaakdatum"@nl ;
+    rdfs:label "date created"@en ;
+    rdfs:domain photo:Photo ;
+    rdfs:range xsd:dateTime ;
+    rdfs:comment "De datum en tijd waarop een foto is gemaakt."@nl .
+
+photo:name a owl:DatatypeProperty ;
+    rdfs:label "naam"@nl ;
+    rdfs:label "name"@en ;
+    rdfs:range xsd:string ;
+    rdfs:comment "De naam van een entiteit."@nl .
+
+photo:firstName a owl:DatatypeProperty ;
+    rdfs:label "voornaam"@nl ;
+    rdfs:label "first name"@en ;
+    rdfs:domain photo:Person ;
+    rdfs:range xsd:string ;
+    rdfs:comment "De voornaam van een persoon."@nl .
+
+photo:lastName a owl:DatatypeProperty ;
+    rdfs:label "achternaam"@nl ;
+    rdfs:label "last name"@en ;
+    rdfs:domain photo:Person ;
+    rdfs:range xsd:string ;
+    rdfs:comment "De achternaam van een persoon."@nl .
+
+# Eigenschappen met inverseOf
+
+photo:hasPhotographer a owl:ObjectProperty ;
+    rdfs:label "heeft fotograaf"@nl ;
+    rdfs:label "has photographer"@en ;
+    rdfs:domain photo:Photo ;
+    rdfs:range photo:Photographer ;
+    rdfs:comment "Relatie tussen een foto en de fotograaf die deze heeft gemaakt."@nl ;
+    owl:inverseOf photo:hasMadePhoto .
+
+photo:hasMadePhoto a owl:ObjectProperty ;
+    rdfs:label "heeft foto gemaakt"@nl ;
+    rdfs:label "has made photo"@en ;
+    rdfs:domain photo:Photographer ;
+    rdfs:range photo:Photo ;
+    rdfs:comment "Relatie tussen een fotograaf en een foto die hij/zij heeft gemaakt."@nl ;
+    owl:inverseOf photo:hasPhotographer .
+
+photo:depictsPerson a owl:ObjectProperty ;
+    rdfs:label "beeldt persoon af"@nl ;
+    rdfs:label "depicts person"@en ;
+    rdfs:domain photo:Photo ;
+    rdfs:range photo:Person ;
+    rdfs:comment "Relatie tussen een foto en een persoon die op de foto staat."@nl ;
+    owl:inverseOf photo:isDepictedIn .
+
+photo:isDepictedIn a owl:ObjectProperty ;
+    rdfs:label "is afgebeeld in"@nl ;
+    rdfs:label "is depicted in"@en ;
+    rdfs:domain photo:Person ;
+    rdfs:range photo:Photo ;
+    rdfs:comment "Relatie tussen een persoon en een foto waarin hij/zij is afgebeeld."@nl ;
+    owl:inverseOf photo:depictsPerson .
+
+photo:takenAt a owl:ObjectProperty ;
+    rdfs:label "genomen op locatie"@nl ;
+    rdfs:label "taken at location"@en ;
+    rdfs:domain photo:Photo ;
+    rdfs:range photo:Location ;
+    rdfs:comment "Relatie tussen een foto en de locatie waar deze is genomen."@nl ;
+    owl:inverseOf photo:hasPhotoTaken .
+
+photo:hasPhotoTaken a owl:ObjectProperty ;
+    rdfs:label "heeft foto genomen op locatie"@nl ;
+    rdfs:label "has photo taken at location"@en ;
+    rdfs:domain photo:Location ;
+    rdfs:range photo:Photo ;
+    rdfs:comment "Relatie tussen een locatie en een foto die daar is genomen."@nl ;
+    owl:inverseOf photo:takenAt .

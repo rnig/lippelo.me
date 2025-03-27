@@ -1,0 +1,28 @@
+# Een landschapsfoto
+photo:foto2 a photo:LandscapePhoto ;
+    photo:title "tuin Erwin"@nl ;
+    photo:description "Aanleg van een strook bloemenweide in Erwins tuin."@nl ;
+    photo:dateCreated "2024-10-13T14:31:00"^^xsd:dateTime ;
+    photo:hasPhotographer photo:fotograaf1 ;
+    photo:takenAt photo:bloemenweide ;
+    photo:depictsLocation photo:bloemenweide ;
+    photo:hasTag photo:tag_tuin, photo:tag_bloemenweide, photo:tag_pluktuin, photo:tag_ecologie .
+
+# De locatie
+photo:bloemenweide a photo:Landmark ;
+    photo:name "bloemenweide" ;
+    geo:lat 51.0452 ;
+    geo:long 4.2531 .
+
+# Extra tags
+photo:tag_tuin a photo:Tag ;
+    photo:name "tuin" .
+
+photo:tag_bloemenweide a photo:Tag ;
+    photo:name "bloemenweide" .
+
+photo:tag_pluktuin a photo:Tag ;
+    photo:name "pluktuin" .
+
+photo:tag_ecologie a photo:Tag ;
+    photo:name "ecologisch tuinieren" .
