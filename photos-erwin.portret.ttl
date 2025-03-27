@@ -17,9 +17,9 @@ photo:fotograaf1 a photo:Photographer ;
 
 # De afgebeelde persoon
 photo:persoon1 a photo:Subject ;
-    photo:firstName "Jan" ;
-    photo:lastName "Bakker" ;
-    photo:name "Jan Bakker" ;
+    photo:firstName "Erin" ;
+    photo:lastName "Geeraerts" ;
+    photo:name "Erwin Geeraerts" ;
     photo:isDepictedIn photo:foto1 .
 
 # De locatie

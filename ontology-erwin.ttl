@@ -17,11 +17,12 @@
 <http://lippelo.me/photo-ontology> a owl:Ontology ;
     rdfs:label "Foto Ontologie"@nl ;
     rdfs:label "Photo Ontology"@en ;
+    rdfs:comment "An ontology for describing photograph's, photographers as well as photographed persons, locatoins and various properties of photographs."@en ;
     rdfs:comment "Een ontologie voor het beschrijven van foto's, fotografen, afgebeelde personen, locaties en foto-eigenschappen."@nl ;
-    dcterms:creator "Ontologie Ontwerper" ;
-    dcterms:created "2025-03-23"^^xsd:date ;
-    dcterms:modified "2025-03-23"^^xsd:date ;
-    owl:versionInfo "1.0" .
+    dcterms:creator "Erwin Geeraerts" ;
+    dcterms:created "2025-03-16"^^xsd:date ;
+    dcterms:modified "2025-03-27"^^xsd:date ;
+    owl:versionInfo "0.1" .
 
 # Hoofdklassen van de ontologie
 
@@ -30,6 +31,7 @@ photo:Photo a owl:Class ;
     rdfs:label "Foto"@nl ;
     rdfs:label "Photo"@en ;
     rdfs:comment "Een fotografische afbeelding."@nl ;
+    rdfs:comment "A photographic picture."@en ;    
     rdfs:subClassOf foaf:Image .
 
 # Persoon klasse
