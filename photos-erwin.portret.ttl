@@ -1,8 +1,11 @@
+@prefix photo: <https://lippelo.me/ontology-erwin.ttl#> .
+
 # Een portretfoto
-photo:foto1 a photo:PortraitPhoto ;
+<https://lippelo.me/erwin-portret.jpg> a photo:PortraitPhoto ;
     photo:title "Portret Erwin"@nl ;
     photo:description "Een portret van Erwin op kantoor."@nl ;
     photo:dateCreated "2024-10-15T15:54:00"^^xsd:dateTime ;
+    photo:Photographer <https://lippelo.me/#me>;
     photo:hasPhotographer photo:fotograaf1 ;
     photo:depictsPerson photo:persoon1 ;
     photo:takenAt photo:kantoor1 ;

@@ -15,10 +15,8 @@
 
 # Beschrijving van de ontologie zelf
 <http://lippelo.me/photo-ontology> a owl:Ontology ;
-    rdfs:label "Foto Ontologie"@nl ;
-    rdfs:label "Photo Ontology"@en ;
-    rdfs:comment "An ontology for describing photograph's, photographers as well as photographed persons, locatoins and various properties of photographs."@en ;
-    rdfs:comment "Een ontologie voor het beschrijven van foto's, fotografen, afgebeelde personen, locaties en foto-eigenschappen."@nl ;
+    rdfs:label "Foto Ontologie"@nl , "Photo Ontology"@en ;
+    rdfs:comment "An ontology for describing photograph's, photographers as well as photographed persons, locatoins and various properties of photographs."@en , "Een ontologie voor het beschrijven van foto's, fotografen, afgebeelde personen, locaties en foto-eigenschappen."@nl ;
     dcterms:creator "Erwin Geeraerts" ;
     dcterms:created "2025-03-16"^^xsd:date ;
     dcterms:modified "2025-03-27"^^xsd:date ;
@@ -27,24 +25,25 @@
 # Hoofdklassen van de ontologie
 
 # Foto klasse
-photo:Photo a owl:Class ;
-    rdfs:label "Foto"@nl ;
-    rdfs:label "Photo"@en ;
-    rdfs:comment "Een fotografische afbeelding."@nl ;
-    rdfs:comment "A photographic picture."@en ;    
-    foaf:subClassOf foaf:Image .
+
+photo:Photo a owl:Class , rdfs:Class;
+    rdfs:label "Foto"@nl , rdfs:label "Photo"@en ;
+    rdfs:comment "Een fotografische afbeelding."@nl , "A photographic picture."@en ;    
+    rdfs:subClassOf foaf:Image ;
+    owl:equivalentClass foaf:Image .
+    #photo:depictsPerson photo:Person.
+    #foaf:depicts photo:Subject.
 
 # Persoon klasse
-photo:Person a owl:Class ;
-    rdfs:label "Persoon"@nl ;
-    rdfs:label "Person"@en ;
+photo:Person a owl:Class , rdfs:Class;
+    rdfs:label "Persoon"@nl , "Person"@en ;
     rdfs:comment "Een persoon gerelateerd aan een foto, zoals een fotograaf of een afgebeeld persoon."@nl ;
-    foaf:subClassOf foaf:Person .
+    rdfs:subClassOf foaf:Person ;
+    owl:equivalentClass foaf:Person.
 
 # Fotograaf subklasse
-photo:Photographer a owl:Class ;
-    rdfs:label "Fotograaf"@nl ;
-    rdfs:label "Photographer"@en ;
+photo:Photographer a owl:Class, rdfs:Class ;
+    rdfs:label "Fotograaf"@nl , "Photographer"@en ;
     rdfs:comment "Een persoon die fotografeert."@nl ;
     rdfs:subClassOf photo:Person .
 
@@ -53,7 +52,8 @@ photo:Subject a owl:Class ;
     rdfs:label "Onderwerp"@nl ;
     rdfs:label "Subject"@en ;
     rdfs:comment "Een persoon die in een foto is afgebeeld."@nl ;
-    rdfs:subClassOf photo:Person .
+    rdfs:subClassOf photo:Person ;
+    foaf:.
 
 # Locatie klasse
 photo:Location a owl:Class ;
