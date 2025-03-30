@@ -28,7 +28,7 @@
 photo:Photo a owl:Class, rdfs:Class ;
     rdfs:label "Foto"@nl , "Photo"@en ;
     rdfs:comment "Een fotografische afbeelding."@nl , "A photographic picture."@en ;    
-    rdfs:equivalentClass foaf:Image .
+    rdfs:equivalentClass foaf:Image ;
     rdfs:subClassOf foaf:Image ;
     owl:equivalentClass foaf:Image .
     #photo:depictsPerson photo:Person.
@@ -52,7 +52,7 @@ photo:Subject a owl:Class ;
     rdfs:label "Onderwerp"@nl, "Subject"@en ;
     rdfs:comment "Een persoon die in een foto is afgebeeld."@nl ;
     rdfs:subClassOf photo:Person ;
-    rdfs:range photo:Person
+    rdfs:range photo:Person ; 
     owl:equivalentProperty foaf:depicts.
 
 # Locatie klasse

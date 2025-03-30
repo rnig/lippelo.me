@@ -11,7 +11,7 @@
     photo:hasTag photo:tag_portret, photo:tag_professional .
 
 # De fotograaf
-photo:fotograaf1 a photo:Photographer ;
+<https://lippelo.me/me.ttl#me> a photo:Photographer ;
     photo:firstName "Erwin" ;
     photo:lastName "Geeraerts" ;
     photo:name "Erwin Geeraerts" ;
@@ -27,8 +27,6 @@ photo:fotograaf1 a photo:Photographer ;
 # De locatie
 photo:kantoor1 a photo:Location ;
     photo:name "kantoor Patronale Life" ;
-    geo:lat 50.8524 ;
-    geo:long 4.3679
     photo:hasPhotoTaken photo:foto1 .
 
 # De tags
