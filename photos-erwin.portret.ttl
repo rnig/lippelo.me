@@ -4,8 +4,7 @@
 <https://lippelo.me/erwin-portret.jpg> a photo:PortraitPhoto ;
     photo:title "Portret Erwin"@nl ;
     photo:description "Een portret van Erwin op kantoor."@nl ;
-    photo:dateCreated "2024-10-15T15:54:00"^^xsd:dateTime ;
-    photo:Photographer <https://lippelo.me/#me>;
+    photo:dateCreated "2024-10-15T15:54:00";
     photo:hasPhotographer photo:fotograaf1 ;
     photo:depictsPerson photo:persoon1 ;
     photo:takenAt photo:kantoor1 ;
@@ -19,7 +18,7 @@ photo:fotograaf1 a photo:Photographer ;
     photo:hasMadePhoto photo:foto1 .
 
 # De afgebeelde persoon
-photo:persoon1 a photo:Subject ;
+<https://lippelo.me/me.ttl#me> a photo:Subject ;
     photo:firstName "Erin" ;
     photo:lastName "Geeraerts" ;
     photo:name "Erwin Geeraerts" ;
