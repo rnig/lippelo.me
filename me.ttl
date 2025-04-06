@@ -81,3 +81,4 @@
 
 
 <https://lippelo.me/me.ttl> <http://www.w3.org/ns/solid/terms#oidcIssuerRegistrationToken> "584d92c3-8592-494f-9f03-5b4ed10a29e7".
+<https://lippelo.me/me.ttl> <http://www.w3.org/ns/solid/terms#oidcIssuer> <https://kg.course.knows.idlab.ugent.be/>.
