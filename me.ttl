@@ -80,4 +80,4 @@
     a foaf:Person .
 
 
-<https://lippelo.me/me.ttl> <http://www.w3.org/ns/solid/terms#oidcIssuerRegistrationToken> "3f161888-4710-4791-be3e-aaa4bec701ae".
+<https://lippelo.me/me.ttl> <http://www.w3.org/ns/solid/terms#oidcIssuerRegistrationToken> "584d92c3-8592-494f-9f03-5b4ed10a29e7".
