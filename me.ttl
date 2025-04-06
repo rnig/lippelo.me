@@ -79,3 +79,5 @@
 <https://gc-cc.github.io/#me>
     a foaf:Person .
 
+
+<https://lippelo.me/me.ttl> <http://www.w3.org/ns/solid/terms#oidcIssuerRegistrationToken> "3f161888-4710-4791-be3e-aaa4bec701ae".
