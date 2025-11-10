@@ -90,9 +90,22 @@ aside {border:1px solid gray;
 	-ms-box-shadow:4px 4px 10px gray;
 	box-shadow:4px 4px 10px gray;
 	}
-figure {display:block;padding-bottom:10px;border-bottom:1px solid navy;margin-bottom:20px;}
-figcaption {display:block;font-size:65%;font-weight:bold;margin-top:0;width:430px;line-height:1.4em;}
-figcaption span {font-weight:normal;color:gray;}
+figure {
+    display:block;
+    padding-bottom:10px;
+    border-bottom:1px solid navy;
+    margin-bottom:20px;
+}
+figcaption {
+    display:block;
+    font-size:65%;
+    font-weight:bold;
+    margin-top:0;
+    width:430px;
+    line-height:1.4em;
+    color:#9F7D23;
+}
+figcaption span {font-weight:normal;color:white;}
 figure img {border:15px solid white;margin-bottom:10px;
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
