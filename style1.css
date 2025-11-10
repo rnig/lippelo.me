@@ -1,7 +1,16 @@
 /*
-CSS for Bubble Under site
+CSS LippeLof
 */
-body {font-family:Verdana, Helvetica, Arial, sans-serif;background-color:black;line-height:125%;padding-left: 2rem:padding-right:3rem;margin:0;}
+
+body {
+    font-family:Verdana, Helvetica, Arial, sans-serif;
+    background-color:black;
+    line-height:125%;
+    padding-left: 2rem;
+    padding-right:3rem;
+    margin:0;
+}
+
 /* Structure - positioning of key parts of page */
 nav, #body_text, header {position:absolute;}
 nav, #body_text {top:107px;}
