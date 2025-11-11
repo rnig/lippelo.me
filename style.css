@@ -8,8 +8,8 @@ body {
 }
 
 .hover-box {
-    width: 60px;
-    height: 60px;
+    width: 150px;
+    height: 180px;
     background-color: #3498db;
     color: white;
     display: flex;
@@ -29,8 +29,8 @@ body {
 }
 
 .hover-box:hover {
-    width: 120px;
-    height: 120px;
+    width: 600px;
+    height: 720px;
     position: absolute;
     z-index: 2;
     background-color: #e74c3c;
