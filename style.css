@@ -29,8 +29,8 @@ body {
 }
 
 .hover-box:hover {
-    width: 1200px;
-    height: 1200px;
+    width: 600px;
+    height: 600px;
     position: absolute;
     z-index: 2;
     background-color: #e74c3c;
